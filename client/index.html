@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale-1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>web app</title>
+</head>    
+<body>
+    
+    <main>
+        <div>
+            <Label>GM Password:</Label>
+            <input type="text" id="password">
+        </div>
+        <br>
+        <div class="box" hidden id = "password-error">
+            Password Error
+        </div>
+        <br>
+        <lable>Player:</lable>
+        <input type="text" class="search-input" placeholder="#" id="player-number-input" size="1">
+        <input type="text" class="search-input" placeholder="POS" id="pos-input" size="1">
+        <input type="text" class="search-input" placeholder="Name" id="name-input" size="10">
+        <input type="text" class="search-input" placeholder="SPD" id="spd-input" size="1">
+        <input type="text" class="search-input" placeholder="STR" id="str-input" size="1">
+        <input type="text" class="search-input" placeholder="AGL" id="agl-input" size="1">
+        <input type="text" class="search-input" placeholder="INT" id="int-input" size="1">
+        <input type="text" class="search-input" placeholder="DIS" id="dis-input" size="1">
+        <input type="text" class="search-input" placeholder="Total" id="total-input" size="2">
+        <input type="text" class="search-input" placeholder="EXP" id="exp-input" size="2">
+        <input type="text" class="search-input" placeholder="Team" id="team-input" size="10">
+        <input type="text" class="search-input" placeholder="College" id="college-input" size="10">
+        <input type="text" class="search-input" placeholder="Awards" id="awards-input" size="20">    
+        <button id="add-name-btn"> Add Player</button>
+        <button id="search-btn"> Search</button>
+    
+
+        <br><br><br>
+        <section hidden id = "update-row">
+        <label> Player:</label>
+        <input type="text" placeholder="#" id="update-player-number-input" size="1">
+        <input type="text" placeholder="POS" id="update-pos-input" size="1">
+        <input type="text" placeholder="Name"  id="update-name-input" size="10">
+        <input type="text" placeholder="SPD" id="update-spd-input" size="1">
+        <input type="text" placeholder="STR" id="update-str-input" size="1">
+        <input type="text" placeholder="AGL" id="update-agl-input" size="1">
+        <input type="text" placeholder="INT" id="update-int-input" size="1">
+        <input type="text" placeholder="DIS" id="update-dis-input" size="1">
+        <input type="text" placeholder="Total" id="update-total-input" size="2">
+        <input type="text" placeholder="EXP" id="update-exp-input" size="2">
+        <input type="text" placeholder="Team" id="update-team-input" size="10">
+        <input type="text" placeholder="College" id="update-college-input" size="10">
+        <input type="text" placeholder="Awards" id="update-awards-input" size="20">
+            
+            <button id="update-row-btn">Update</button>
+        </section>
+        <div>
+            
+        </div>
+        <table>
+            <thead>
+                <th>Player#</th>
+                <th>POS</th>
+                <th>Name</th>
+                <th>SPD</th>
+                <th>STR</th>
+                <th>AGL</th>
+                <th>INT</th>
+                <th>DIS</th>
+                <th>Total</th>
+                <th>EXP</th>
+                <th>Team</th>
+                <th>College</th>
+                <th>Awards</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        
+    </main>
+    <script src="index.js"> </script>
+</body>
+</html>
